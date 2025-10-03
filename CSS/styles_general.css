@@ -1,0 +1,31 @@
+:root {
+    --base: #E7EFC7;
+    --primario: #8A784E;
+    --secundario: #AEC8A4;
+    --terciario: #3B3B1A;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+
+
+/*SE TRABAJA CON MODELO COMPUTADORA. LAS MEDIA QUERIES SON PARA CELULAR Y TABLET*/
+
+
+
+
+
+
+
+
+
+
+/** MEDIA QUERIES **/
