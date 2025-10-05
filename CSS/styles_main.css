@@ -2,11 +2,106 @@
 
 
 /** COMPONENTES **/
+.cuadro-venta {
+    
+}
+
+
+/**CLASES **/
+
+
+/** TÍTULO Y LOGO **/
+.titulo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.titulo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+     background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), /* capa oscura */
+        url('../IMG/Pin en Man style.jpg');
+    background-position: center;
+    background-size:cover;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+.logo-header {
+    max-width: min(60rem, 30vw);
+    margin: 10rem;
+}
+
+.brand-title {
+    color: var(--base);
+    font-size: min(30rem, 10vw);
+}
+
+
+/**NAV BAR**/
+.nav-bar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: var(--secundario);
+}
+
+.nav-bar_a {
+    text-decoration: none;
+    color: var(--primario);
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+
+.nav-bar_a:hover{
+    color: var(--base);
+}
 
 
 
-/**CLASES
+/** BARRA DE BÚSQUEDA **/
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin: 5rem;
+}
 
+.search-bar_button {
+    margin-left: 1rem;
+    background-color: var(--secundario);
+    width: min(200px, 30%);
+    padding: 1rem;
+    color: var(--primario);
+    font-size: 2rem;
+    font-weight: bold;
+    border: none;
+    box-shadow: 6px 6px 8px black;
+    border-radius: 0.5rem;
+}
+
+.search-bar_bar {
+    width: 500px;
+    padding: 1rem;
+}
+
+
+/** para probar el scroll **/
+.scroll {
+    height: 200rem;
+}
 
 
 

@@ -6,13 +6,22 @@
 }
 
 html {
+    font-family: monospace;
     font-size: 62.5%;
     box-sizing: border-box;
 }
 
+body {
+    background-color: var(--base);
+}
+
 *, *:before, *:after {
+    margin: 0;
+    padding: 0;
     box-sizing: inherit;
 }
+
+
 
 
 
