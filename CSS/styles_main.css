@@ -2,9 +2,9 @@
 
 
 /** COMPONENTES **/
-.cuadro-venta {
 
-}
+
+
 
 
 
@@ -13,7 +13,6 @@
 
 
 /**CLASES **/
-
 
 /** TÍTULO Y LOGO **/
 .titulo {
@@ -59,6 +58,12 @@
 
 
 
+
+
+
+
+
+
 /** LOGO DE ARRIBA **/
 .logo-up {
     position: absolute;
@@ -78,6 +83,12 @@
     display: block;
     font-size: 1.5rem;
 }
+
+
+
+
+
+
 
 
 
@@ -114,9 +125,9 @@
 
 
 /** para probar el scroll **/
-.scroll {
+/* .scroll {
     height: 200rem;
-}
+} */
 
 
 
@@ -126,45 +137,6 @@
 
 
 
-/** CARRUSEL **/
-.carousel {
-    padding: 2rem;
-    background-color: var(--secundario);
-    color: var(--primario);
-}
-
-.carousel-wrapper {
-    display: flex;
-    overflow-x: auto;       /* habilita scroll horizontal */
-    scroll-snap-type: x mandatory; /* que “snapee” cada item */
-    -webkit-overflow-scrolling: touch; /* smooth en iOS */
-    gap: 1rem;              /* separación entre items */
-    padding-bottom: 1rem;
-}
-
-.carousel-item {
-    flex: 0 0 auto;          /* que no se encoja */
-    width: 250px;            /* ancho de cada tarjeta */
-    scroll-snap-align: start; /* cada item “snap” al inicio */
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-    transition: transform 0.3s;
-}
-
-.carousel-item img {
-    width: 100%;
-    display: block;
-}
-
-.carousel-item:hover {
-    transform: scale(1.05);
-}
-
-/* Opcional: quitar scroll bar para que se vea limpio */
-.carousel-wrapper::-webkit-scrollbar {
-    display: none;
-}
 
 
 
@@ -253,9 +225,101 @@
 
 
 
+
+
+
+
+
+
+/** CARRUSEL **/
+
+.other-items {
+    margin: 2rem 0;
+}
+
+.other-items_title {
+    text-align: center;
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+
+
+
+
+
+.carousel {
+    padding: 2rem;
+    background-color: var(--secundario);
+    color: var(--primario);
+}
+
+.carousel-container {
+    overflow: visible;
+    position: relative;
+}
+
+.carousel-wrapper {
+    display: flex;
+    overflow-x: auto;       /* habilita scroll horizontal */
+    scroll-snap-type: x mandatory; /* que “snapee” cada item */
+    scroll-padding-left: 3rem;
+    -webkit-overflow-scrolling: touch; /* smooth en iOS */
+    gap: 2.5rem;     
+    padding: 1rem 3rem;
+}
+
+
+.carousel-item {
+    flex: 0 0 auto; 
+    justify-items: center;         /* que no se encoja */
+    width: 250px;            /* ancho de cada tarjeta */
+    scroll-snap-align: start; /* cada item “snap” al inicio */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.5s;
+    
+}
+
+.carousel-item img {
+    box-sizing: border-box;
+    width: 60%;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 3px 3px 10px var(--terciario);
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-item:hover {
+    transform: scale(1.05);
+}
+
+/* Opcional: quitar scroll bar para que se vea limpio */
+.carousel-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+/** PARA EL FOOTER **/
+.foot {
+    padding: 1rem;
+    text-align: end;
+}
+
+
+
 /**PARA EL SPACER **/
 .spacer {
-    height: 500px;
+    height: 30px;
 }
 
 /** MEDIA QUERIES **/
