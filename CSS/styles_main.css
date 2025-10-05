@@ -2,13 +2,17 @@
 
 
 /** COMPONENTES **/
-.cuadro-venta {
 
-}
+
+
+
+
+
+
+
 
 
 /**CLASES **/
-
 
 /** TÍTULO Y LOGO **/
 .titulo {
@@ -50,6 +54,16 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 /** LOGO DE ARRIBA **/
 .logo-up {
     position: absolute;
@@ -73,6 +87,15 @@
 
 
 
+
+
+
+
+
+
+
+
+
 /** BARRA DE BÚSQUEDA **/
 .search-bar {
     display: flex;
@@ -89,52 +112,183 @@
     font-size: 2rem;
     font-weight: bold;
     border: none;
-    box-shadow: 6px 6px 8px black;
+    box-shadow: 6px 6px 6px var(--terciario);
     border-radius: 0.5rem;
 }
 
 .search-bar_bar {
     width: 500px;
     padding: 1rem;
+    margin-right: 2rem;
+    box-shadow: 6px 6px 6px var(--terciario);
 }
 
 
 /** para probar el scroll **/
-.scroll {
+/* .scroll {
     height: 200rem;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** GRID INICIAL **/
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 3rem repeat(2, 1fr);
+    padding: 20px;
+    gap: 30px;
 }
+
+.grid-item_title {
+    grid-column: span 4;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+.main-grid_item {
+    box-sizing:border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--primario);
+    border-radius: 15px;
+    padding: 10px;
+    transition: transform 0.5s ease;
+}
+
+.main-grid_item:hover {
+    transform: scale(1.05);
+}
+
+.grid-item_big {
+    grid-column: 1 / 3;
+    grid-row: span 2;
+}
+
+.grid-item_img {
+    box-sizing: border-box;
+    padding: 2rem;;
+    margin: 1rem;
+    width: 70%;
+    height: 60%;
+    object-fit: cover;
+    box-shadow: 3px 3px 10px var(--terciario);
+}
+
+.grid-item_description {
+    margin: 1rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.grid-item_description-big {
+    font-size: 4rem;
+}
+
+.grid-item_precio-antes {
+    color: #A22;
+    text-decoration:line-through;
+    font-size: 2rem;
+}
+
+
+.grid-item_precio-despues {
+    font-size: 3rem;
+
+}
+
+
+
+.grid-item_precio-antes-big {
+    font-size: 5rem;
+}
+
+.grid-item_precio-despues-big {
+    font-size: 8rem;
+}
+
+
+
+
+
+
 
 
 
 
 /** CARRUSEL **/
+
+.other-items {
+    margin: 2rem 0;
+}
+
+.other-items_title {
+    text-align: center;
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+
+
+
+
+
 .carousel {
     padding: 2rem;
     background-color: var(--secundario);
     color: var(--primario);
 }
 
+.carousel-container {
+    overflow: visible;
+    position: relative;
+}
+
 .carousel-wrapper {
     display: flex;
     overflow-x: auto;       /* habilita scroll horizontal */
     scroll-snap-type: x mandatory; /* que “snapee” cada item */
+    scroll-padding-left: 3rem;
     -webkit-overflow-scrolling: touch; /* smooth en iOS */
-    gap: 1rem;              /* separación entre items */
-    padding-bottom: 1rem;
+    gap: 2.5rem;     
+    padding: 1rem 3rem;
 }
 
+
 .carousel-item {
-    flex: 0 0 auto;          /* que no se encoja */
+    flex: 0 0 auto; 
+    justify-items: center;         /* que no se encoja */
     width: 250px;            /* ancho de cada tarjeta */
     scroll-snap-align: start; /* cada item “snap” al inicio */
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-    transition: transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.5s;
+    
 }
 
 .carousel-item img {
-    width: 100%;
+    box-sizing: border-box;
+    width: 60%;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 3px 3px 10px var(--terciario);
+    object-fit: cover;
     display: block;
 }
 
@@ -152,5 +306,20 @@
 
 
 
+
+
+
+/** PARA EL FOOTER **/
+.foot {
+    padding: 1rem;
+    text-align: end;
+}
+
+
+
+/**PARA EL SPACER **/
+.spacer {
+    height: 30px;
+}
 
 /** MEDIA QUERIES **/
