@@ -45,7 +45,50 @@ body {
     color: var(--base);
 }
 
+.current {
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
+
+
+
+/** LOGO DE ARRIBA DE LAS PÁGINAS **/
+/** LOGO DE ARRIBA **/
+.logo-up {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 6rem;
+}
+
+.logo-up_catalog {
+    position: relative;
+}
+
+.logo-up_logo {
+    display: block;
+    height: 100%;
+    padding: 1rem;
+}
+
+.logo-up_text {
+    display: block;
+    font-size: 1.5rem;
+}
+
+.logo-up_text-catalog {
+    color: #aaa;
+}
+
+
+
+
+/**PARA PROBAR SCROLL **/
+.scroll {
+    height: 200rem;
+}
 
 
 /*SE TRABAJA CON MODELO COMPUTADORA. LAS MEDIA QUERIES SON PARA CELULAR Y TABLET*/

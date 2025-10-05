@@ -1,0 +1,108 @@
+body {
+    overflow: visible;
+    font-family: monospace;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url('../IMG/campo-algodon.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* hace que sea sticky */
+    background-color: #333;
+}
+
+
+
+
+
+
+
+
+
+/** SIDE BAR **/
+.catalog-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.catalog-main {
+    flex: 1;
+    min-height: 150vh;
+}
+
+
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 10rem;
+    height: 80vh;
+    width: 250px;
+
+    /* ESTILO */
+    background-color: var(--secundario);
+    font-size: 1.5rem;
+    line-height: 4rem;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 0 10px 10px 0;
+}
+
+.sidebar_categorias-title, .sidebar_filtrar-title {
+    margin-top: 3rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+.sidebar_categorias-list, .sidebar_filtrar-list{
+    margin-left: 3rem;
+}
+
+
+.sidebar_categorias-item, .sidebar_filtrar-item{
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--terciario);
+    font-weight: bold;
+}
+
+.sidebar_list-item {
+    margin-top: 1rem;
+}
+
+
+
+
+
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin: 3rem;
+
+}
+
+.catalog-grid_item {
+    background-color: var(--primario);
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px var(--terciario);
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.catalog-grid_item-img {
+    box-sizing: border-box;
+    width: 80%;
+    height: 80%;
+
+    padding: 1rem;
+    box-shadow: 3px 3px 10px var(--terciario);
+
+    object-fit: cover;
+    border-radius: 15px;
+}

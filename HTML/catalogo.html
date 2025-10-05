@@ -4,21 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/styles_general.css">
+    <link rel="stylesheet" href="..//CSS/styles_catalog.css">
     <title>M.U. KINGG</title>
 </head>
 <body>
-     <header>
+   
+
+    <div class="logo-up logo-up_catalog">
+        <img class="logo-up_logo" src="../IMG/logo.png" alt="Aqui el logo">
+        <p class="logo-up_text logo-up_text-catalog">® All Rights Reserved</p>
+    </div>
+
+     <!-- <header>
         <img src="" alt="Aqui el logo">
         M.U. KINGG
-    </header>
-    <main>
-        <nav class="nav-bar">
-            <a class="nav-bar_a" href="./index.html">Home</a>
-            <a class="nav-bar_a" href="./catalogo.html">Catálogo</a>
-            <a class="nav-bar_a" href="./contactanos.html">Contáctanos</a>
-            <a class="nav-bar_a" href="./sobreNosotros.html">Sobre Nosotros</a>
-        </nav> 
-    </main>
+    </header> -->
+    <nav class="nav-bar">
+        <a class="nav-bar_a" href="./index.html">Home</a>
+        <a class="nav-bar_a current" href="./catalogo.html">Catálogo</a>
+        <a class="nav-bar_a" href="./contactanos.html">Contáctanos</a>
+        <a class="nav-bar_a" href="./sobreNosotros.html">Sobre Nosotros</a>
+    </nav> 
+
+
+    <div class="catalog-container">
+        <aside class="sidebar">
+            <h2 class="sidebar_categorias-title">Categorías</h2>
+            <ul class="sidebar_categorias-list">
+                <li class="sidebar_list-item"><a class="sidebar_categorias-item" href="#">Camisas</a></li>
+                <li class="sidebar_list-item"><a class="sidebar_categorias-item" href="#">Pantalones</a></li>
+                <li class="sidebar_list-item"><a class="sidebar_categorias-item" href="#">Sudaderas</a></li>
+                <li class="sidebar_list-item"><a class="sidebar_categorias-item" href="#">Accesorios</a></li>
+            </ul>
+            <h2 class="sidebar_filtrar-title">Filtrar por</h2>
+            <ul class="sidebar_filtrar-list">
+                <li class="sidebar_list-item"><a class="sidebar_filtrar-item" href="#">Precio: Menor a Mayor</a></li>
+                <li class="sidebar_list-item"><a class="sidebar_filtrar-item" href="#">Precio: Mayor a Menor</a></li>
+                <li class="sidebar_list-item"><a class="sidebar_filtrar-item" href="#">Nuevos Productos</a></li>
+            </ul>
+        </aside>
+
+
+
+
+        <main class="catalog-main">
+            <!-- VOY A METER UN GRID BIEN INSANO -->
+             <div class="catalog-grid">
+
+                <div class="catalog-grid_item">
+                    <img src="../IMG/ITEMS/popular_1.jpg" alt="Item" class="catalog-grid_item-img">
+                </div>
+                
+                <div class="catalog-grid_item">
+                    <img src="../IMG/ITEMS/popular_1.jpg" alt="Item" class="catalog-grid_item-img">
+                </div>
+
+                <div class="catalog-grid_item">
+                    <img src="../IMG/ITEMS/popular_1.jpg" alt="Item" class="catalog-grid_item-img">
+                </div>
+
+                <div class="catalog-grid_item">
+                    <img src="../IMG/ITEMS/popular_1.jpg" alt="Item" class="catalog-grid_item-img">
+                </div>
+
+                <div class="catalog-grid_item">
+                    <img src="../IMG/ITEMS/popular_1.jpg" alt="Item" class="catalog-grid_item-img">
+                </div>
+
+                <div class="catalog-grid_item">
+                    <img src="../IMG/ITEMS/popular_1.jpg" alt="Item" class="catalog-grid_item-img">
+                </div>
+             </div>
+        </main>
+    </div>
+
 
 </body>
 </html>
