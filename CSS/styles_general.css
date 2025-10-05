@@ -23,6 +23,27 @@ body {
 
 
 
+/**NAV BAR**/
+.nav-bar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: var(--secundario);
+}
+
+.nav-bar_a {
+    text-decoration: none;
+    color: var(--primario);
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+
+.nav-bar_a:hover{
+    color: var(--base);
+}
+
 
 
 
