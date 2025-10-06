@@ -77,6 +77,29 @@ body {
 
 
 
+.sidebar-toggle-checkbox {
+  display: none;
+}
+
+
+.sidebar-toggle {
+  display: none;
+  position: fixed;
+  top: 6rem;
+  left: 2rem;
+  font-size: 2rem;
+  color: var(--terciario);
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+
+
+
+
+
 
 .catalog-grid {
     display: grid;
@@ -128,3 +151,74 @@ body {
 .catalog-grid_next-page-a:hover {
     transform: scale(1.05);
 }
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .catalog-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    .catalog-grid_next-page {
+        grid-column: span 2;
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+  .sidebar-toggle {
+    display: block;
+    background-color: var(--secundario);
+    border-radius: 3px;
+    padding: 1rem 1.5rem;
+  }
+
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 90vh;
+    width: 70%;
+    background-color: var(--primario);
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in-out;
+    padding: 2rem;
+    padding-top: 6rem;
+    z-index: 9998;
+    overflow-y: auto;
+    box-shadow: 3px 3px 10px var(--terciario);
+  }
+
+  /* Mostrar sidebar cuando el checkbox esté activado */
+  .sidebar-toggle-checkbox:checked ~ .catalog-container .sidebar {
+    transform: translateX(0);
+  }
+
+  /* Ajustar el main para que ocupe todo el ancho */
+  .catalog-main {
+    flex: 1 1 100%;
+  }
+
+
+
+
+
+  .catalog-grid {
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+  }
+
+  .catalog-grid_next-page {
+    grid-column: span 1;
+  }
+}
+
+

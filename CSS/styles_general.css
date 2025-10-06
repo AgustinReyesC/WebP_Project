@@ -51,6 +51,24 @@ body {
 }
 
 
+.menu-toggle-checkbox {
+  display: none;
+}
+
+.menu-toggle {
+  display: none;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  font-size: 4rem;
+  color: var(--terciario);
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+
 
 
 /** LOGO DE ARRIBA DE LAS PÁGINAS **/
@@ -61,6 +79,8 @@ body {
     align-items: center;
     width: 100vw;
     height: 6rem;
+    pointer-events: none;
+    z-index: 1;
 }
 
 .logo-up_catalog {
@@ -103,3 +123,39 @@ body {
 
 
 /** MEDIA QUERIES **/
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* mostrar icono */
+    }
+
+    .nav-bar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100vh;
+    background-color: var(--primario);
+    transform: translateX(100%);
+    transition: transform 0.4s ease-in-out;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .nav-bar_a {
+    font-size: 2.5rem;
+    color: var(--base);
+    padding: 1rem 0;
+  }
+
+  /* Cuando el checkbox está activo, mostramos el menú */
+  .menu-toggle-checkbox:checked ~ .nav-bar {
+    transform: translateX(0);
+  }
+
+  .menu-toggle::after {
+    content: "";
+  }
+}

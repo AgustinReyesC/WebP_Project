@@ -111,7 +111,6 @@
 
 
 
-
 /** GRID INICIAL **/
 .main-grid {
     display: grid;
@@ -269,6 +268,31 @@
     display: none;
 }
 
+.carousel-item_descripcion {
+    font-size: 2rem;
+    text-align: center;
+    color: #333;  
+    padding: 1rem 0;
+}
+
+.carousel-item_precio-antes {
+    font-size: 2rem;
+    color: #A22;
+    text-decoration: line-through;
+}
+
+.carousel-item_precio-despues {
+    font-size: 3rem;
+    color: #333;
+    padding: 1.5rem 0;
+}
+
+
+
+
+
+
+
 
 
 
@@ -317,3 +341,29 @@
 
 
 /** MEDIA QUERIES **/
+@media screen and (max-width: 768px) {
+    /* TENGO QUE CAMBIAR EL NAV BAR */
+
+
+    /* TENGO QUE CAMBIAR EL GRID */
+    .main-grid {
+        grid-template-columns: 1fr;
+
+    }
+
+    .grid-item_title, .main-grid_item {
+        grid-column: span 1;
+    }
+
+    .grid-item_description {
+        font-size: 3rem;
+    }
+
+    .grid-item_precio-antes {
+        font-size: 3rem;
+    }
+
+    .grid-item_precio-despues {
+        font-size: 6rem;
+    }
+}
