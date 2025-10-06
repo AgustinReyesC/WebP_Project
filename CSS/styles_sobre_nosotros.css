@@ -1,0 +1,49 @@
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* hace que sea sticky */
+}
+
+.contenidoPrincipal{
+    background-color: var(--primario);
+    margin: 5rem;
+    /* background-color: black; */
+
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px var(--terciario);
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: monospace;
+    font-size: 3rem;
+    text-align: justify;
+
+}
+
+.contenidoPrincipal-bg{
+    padding: 10rem;
+        overflow: visible;
+    font-family: monospace;
+    background-image: 
+        linear-gradient(var(--primario),var(--secundario)),
+        url('../IMG/campo-algodon.jpg');
+    background-blend-mode:soft-light;
+    background-position: center;
+    background-size: cover;
+}
+
+.contenidoPrincipal-parrafo{
+    margin: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .contenidoPrincipal{
+    margin: 1rem;
+    text-align: left;
+  }
+
+  .contenidoPrincipal-bg{
+    padding: 1rem 3rem;
+  }
+}

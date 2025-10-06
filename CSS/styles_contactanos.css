@@ -1,0 +1,34 @@
+.contenidoPrincipal{
+    padding: 3rem;
+}
+
+.contenidoPrincipal-parrafo{
+    text-align: left;
+    padding: auto;
+    margin: auto;
+}
+
+.comentarios{
+    
+    text-align: justify;
+    font-size: 2rem;
+    border-radius: 3rem;
+    padding: 2rem;
+    width: 90%;
+    margin: 2rem;
+    resize: none;
+}
+
+.contactanos-form{
+    width: 100%;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width:768px) {
+    .contenidoPrincipal{
+        font-size: 1.5rem;
+    }
+}

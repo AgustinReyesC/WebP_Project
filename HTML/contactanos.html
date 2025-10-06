@@ -4,23 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/styles_general.css">
+    <link rel="stylesheet" href="../css/styles_main.css">
+    <link rel="stylesheet" href="../CSS/styles_sobre_nosotros.css">
+    <link rel="stylesheet" href="../CSS/styles_contactanos.css">
     <title>M.U. KINGG</title>
 </head>
 <body>
-     <header>
-        <img src="" alt="Aqui el logo">
-        M.U. KINGG
+    <header class="titulo">
+        <img class="logo-header" src="../IMG/logo.png" alt="Aqui el logo">
+        <h1 class="brand-title">M.U. Kingg</h1>
     </header>
     <main>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+        <label for="menu-toggle" class="menu-toggle">☰</label>
         <nav class="nav-bar">
             <a class="nav-bar_a" href="./index.html">Home</a>
             <a class="nav-bar_a" href="./catalogo.html">Catálogo</a>
             <a class="nav-bar_a current" href="./contactanos.html">Contáctanos</a>
             <a class="nav-bar_a" href="./sobreNosotros.html">Sobre Nosotros</a>
         </nav> 
+        <div class="contenidoPrincipal-bg">
+            <div class="contenidoPrincipal">
+                <form class = "contactanos-form" action="">
+                    <textarea class="comentarios" name="COMENTARIO" rows="10" cols="40" placeholder="Comentarios..."></textarea>
+                    <input type="submit" class="search-bar_button" name="ENVIAR" id="ENVIAR" value="ENVIAR"> 
+                </form>
+            </div>
 
-        <div class="contenidoPrincipal">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor quidem animi fugit consectetur nobis doloremque facilis, provident, excepturi delectus cum laborum. Dicta hic distinctio eum perspiciatis ipsa incidunt rem impedit.
+            <div class="contenidoPrincipal">
+                <div class="contenidoPrincipal-parrafo">
+                    Correo: goodolTimes@gmail.com
+                </div>
+                <div class="contenidoPrincipal-parrafo">
+                    Tel: 871-412-0441
+                </div>
+                    
+                <div class="contenidoPrincipal-parrafo">
+                    Dirección:
+                </div>
+                <div class="contenidoPrincipal-parrafo">
+                    Av. del Sol 1234, Piso 5
+                    Col. Jardines del Este
+                    Ciudad Lumina, CP 56789
+                    México
+                </div>
+            </div>
         </div>
     </main>
 
