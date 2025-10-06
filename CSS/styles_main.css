@@ -64,35 +64,6 @@
 
 
 
-/** LOGO DE ARRIBA **/
-.logo-up {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    width: 100vw;
-    height: 6rem;
-}
-
-.logo-up_logo {
-    display: block;
-    height: 100%;
-    padding: 1rem;
-}
-
-.logo-up_text {
-    display: block;
-    font-size: 1.5rem;
-}
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -124,10 +95,7 @@
 }
 
 
-/** para probar el scroll **/
-/* .scroll {
-    height: 200rem;
-} */
+
 
 
 
