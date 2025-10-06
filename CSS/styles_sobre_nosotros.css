@@ -18,6 +18,7 @@ body {
     font-family: monospace;
     font-size: 3rem;
     text-align: justify;
+    width: 50%;
 
 }
 
@@ -27,7 +28,7 @@ body {
     font-family: monospace;
     background-image: 
         linear-gradient(var(--primario),var(--secundario)),
-        url('../IMG/campo-algodon.jpg');
+        url('../IMG/Harvest Field Art.jpg');
     background-blend-mode:soft-light;
     background-position: center;
     background-size: cover;
@@ -46,4 +47,15 @@ body {
   .contenidoPrincipal-bg{
     padding: 1rem 3rem;
   }
+}
+
+@media (max-width: 1800px){
+    .logo-header {
+        margin-top: 5rem;
+        max-width: 45rem;
+    }
+
+    .brand-title {
+        margin-bottom: 14rem;
+    }
 }

@@ -2,6 +2,10 @@
     padding: 3rem;
 }
 
+.contenidoPrincipal-bg{
+    background-image: url("../IMG/campo-algodon.jpg");
+}
+
 .contenidoPrincipal-parrafo{
     text-align: left;
     padding: auto;

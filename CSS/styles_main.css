@@ -52,6 +52,17 @@
     font-size: min(30rem, 10vw);
 }
 
+@media screen and (max-height: 1300px){
+    .logo-header {
+        margin-top: 5rem;
+        max-width: 50rem;
+    }
+
+    .brand-title {
+        margin-bottom: 2rem;
+    }
+}
+
 
 
 
