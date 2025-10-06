@@ -27,6 +27,10 @@ body {
     padding: 10rem;
         overflow: visible;
     font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-image: 
         linear-gradient(var(--primario),var(--secundario)),
         url('../IMG/Harvest Field Art.jpg');
