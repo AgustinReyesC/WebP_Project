@@ -106,3 +106,25 @@ body {
     object-fit: cover;
     border-radius: 15px;
 }
+
+.catalog-grid_next-page {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    background-color: var(--secundario);
+    border-radius: 30px;
+}
+
+.catalog-grid_next-page-a {
+    color: #333;
+    font-size: 2rem;
+    margin: 2rem 5rem;
+    text-decoration: none;
+    transition: transform 0.5s ease;
+}
+
+.catalog-grid_next-page-a:hover {
+    transform: scale(1.05);
+}
