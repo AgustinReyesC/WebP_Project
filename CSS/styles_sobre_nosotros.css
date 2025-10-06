@@ -37,6 +37,7 @@ body {
     background-blend-mode:soft-light;
     background-position: center;
     background-size: cover;
+    background-color:black;
 }
 
 .contenidoPrincipal-parrafo{
@@ -47,6 +48,7 @@ body {
   .contenidoPrincipal{
     margin: 1rem;
     text-align: left;
+    width: auto;
   }
 
   .contenidoPrincipal-bg{
