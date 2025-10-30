@@ -1,0 +1,59 @@
+-admin
+	-mostrar datos
+		-solo una pagina de un nav con cada opción sea una de las tablas
+			-todas las paginas es la misma pero con tabla diferente		
+			-es una tabla que se carga de la bdd dependiendo de cual nav
+				-tengo una variable global que cambio según lo elegido en
+				 el nav
+			-altas
+				-fields vacios al final de la tabla
+				-boton con '+' que lea los datos y los meta a al bdd
+				-submitea para que recarge la pagina 
+				
+			-bajas
+				botón de 'x' que elimina el elemento con esa id
+				-submitea para que recarge la pagina
+			-modificaciones
+				-te deja modificar los campos siempre
+				-hay un botón para guardar cambios al lado de cada row
+				-submitea para que recarge la pagina
+				
+	
+	-login
+		-NO REGISTRO PORQUE ESO SE HACE INTERNAMENTE EN LA EMPRESA
+		-una pagina aparte para el login, solo verifica que sea la contraseña
+		correcta
+
+-ventas
+	-Permite comprar con registro y sin registro del cliente.
+		-en registro deben ser 2 divs, uno de registro y otro de login
+		-literal la pagina no cambia nada si te logueas, solo en la pagina registro
+		se cambia por una pagina que muestra tus datos //este no es necesario
+		-cuando vas a comprar un producto, checa la variable de si estas logueado y
+	 	si lo estas, carga los datos de la bdd
+	 	si no, no carga nada y tienes que meter los datos desde 0
+
+
+	-Muestra los artículos disponibles
+		-index
+		-catalogo
+		-cambiar las img
+
+	-Al vender un producto, el inventario disminuye.
+		-se hace una llamada de bdd para actualizar el valor existencia
+		 con el valor que tenia menos el comprado
+
+	-Al hacer una compra se genera el recibo en formato pdf.
+		-con fpdf, gpt ya me dio el codigo		
+
+	-Permite compra con tarjeta y con paypal.
+		-hay un tutorial
+		-pido los datos necesarios en la pantalla de compra
+		
+	-Utiliza variables de tipo sesión.
+		-es usar session_start(), se supone que ya lo haré con el login
+
+//ENTREGA
+	-Publicarlo en un servidor.
+	Entrega en zip (moodle) ,Subirlo a Github y compartir el enlace en los comentarios.
+

@@ -26,11 +26,11 @@
         <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
         <label for="menu-toggle" class="menu-toggle">☰</label>
         <nav class="nav-bar">
-            <a class="nav-bar_a" href="../index.html">Home</a>
-            <a class="nav-bar_a" href="./catalogo.html">Catálogo</a>
-            <a class="nav-bar_a" href="./contactanos.html">Contáctanos</a>
+            <a class="nav-bar_a" href="../index.php">Home</a>
+            <a class="nav-bar_a" href="./catalogo.php">Catálogo</a>
+            <a class="nav-bar_a" href="./contactanos.php">Contáctanos</a>
             <a class="nav-bar_a" href="./sobreNosotros.html">Sobre Nosotros</a>
-            <a class="nav-bar_a current" href="./login.html">Registro</a>
+            <a class="nav-bar_a current" href="./login.php">Registro</a>
         </nav> 
         <div class="contenidoPrincipal-bg">
             <div class="contenidoPrincipal">

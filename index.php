@@ -25,11 +25,11 @@
     <label for="menu-toggle" class="menu-toggle">☰</label>
 
     <nav class="nav-bar">
-        <a class="nav-bar_a current" href="index.html">Home</a>
-        <a class="nav-bar_a" href="docs/catalogo.html">Catálogo</a>
-        <a class="nav-bar_a main" href="docs/contactanos.html">Contáctanos</a>
+        <a class="nav-bar_a current" href="index.php">Home</a>
+        <a class="nav-bar_a" href="docs/catalogo.php">Catálogo</a>
+        <a class="nav-bar_a main" href="docs/contactanos.php">Contáctanos</a>
         <a class="nav-bar_a" href="docs/sobreNosotros.html">Sobre Nosotros</a>
-        <a class="nav-bar_a" href="docs/login.html">Registro</a>
+        <a class="nav-bar_a" href="docs/login.php">Registro</a>
     </nav> 
     
     <main>
